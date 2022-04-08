@@ -4,6 +4,6 @@
 
 Общую архитектуру построения **UI** можно представить следующим образом:
 
-![UDF_pic](readme_pics/UDF.jpg)
+![UDF_pic](readme_files/UDF.jpg)
 
-![ELM_pic](readme_pics/ELM.jpg)
+![ELM_pic](readme_files/ELM.jpg)
