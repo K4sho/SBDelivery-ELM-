@@ -4,8 +4,8 @@ import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import ru.skillbranch.sbdelivery.screens.ui.DemoScreen
-import ru.skillbranch.sbdelivery.ui.theme.SBDeliveryTheme
+import ru.skillbranch.sbdelivery.screens.root.logic.RootScreen
+import ru.skillbranch.sbdelivery.screens.root.ui.AppTheme
 
 class MainActivity : AppCompatActivity() {
     private val vm: RootViewModel by viewModels()
@@ -13,8 +13,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            SBDeliveryTheme {
-                DemoScreen(vm = vm)
+            AppTheme {
+                RootScreen(vm = vm)
             }
         }
     }
