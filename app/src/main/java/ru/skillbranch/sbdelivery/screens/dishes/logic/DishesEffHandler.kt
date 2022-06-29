@@ -9,7 +9,7 @@ class DishesEffHandler : IEffHandler<DishesFeature.Eff, Msg> {
             is DishesFeature.Eff.AddToCart -> TODO()
             DishesFeature.Eff.FindAllDishes -> TODO()
             is DishesFeature.Eff.RemoveFromCart -> TODO()
-            is DishesFeature.Eff.SearchDishes -> TODO()
+            is DishesFeature.Eff.SearchDishes ->  TODO()
             is DishesFeature.Eff.SyncDishes -> TODO()
         }
     }

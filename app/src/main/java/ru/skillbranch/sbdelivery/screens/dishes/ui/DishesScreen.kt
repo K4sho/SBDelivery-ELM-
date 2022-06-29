@@ -27,7 +27,7 @@ fun DishesScreen(state: DishesFeature.State, accept: (DishesFeature.Msg) -> Unit
         ) {
             Column {
                 Image(
-                    painter = painterResource(id = R.drawable.ic_launcher_background),
+                    painter = painterResource(id = R.drawable.ic_launcher_background), // TODO: Найти картинку с пустым значением
                     contentDescription = "empty",
                     modifier = Modifier.requiredSize(200.dp)
                 )

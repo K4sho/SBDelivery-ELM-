@@ -29,6 +29,6 @@ fun ContentHost(vm: RootViewModel) {
 
     // Navigate save state
     when (screen) {
-        is ScreenState.Dishes -> TODO() //DishesScreen()
+        is ScreenState.Dishes -> DishesScreen(screen.state) { vm.accept(Msg.Dishes(it)) }
     }
 }
