@@ -6,9 +6,10 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.withContext
 import ru.skillbranch.sbdelivery.screens.dishes.logic.DishesEffHandler
 import ru.skillbranch.sbdelivery.screens.dishes.logic.DishesFeature
+import javax.inject.Inject
 import kotlin.coroutines.coroutineContext
 
-class EffDispatcher(
+class EffDispatcher @Inject constructor(
     private val dishesHandler: DishesEffHandler
 ) : IEffHandler<Eff, Msg> {
     private lateinit var _localJob: Job

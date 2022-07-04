@@ -25,14 +25,14 @@ fun DishesScreen(state: DishesFeature.State, accept: (DishesFeature.Msg) -> Unit
             modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.Center
         ) {
-            Column {
+            Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Image(
-                    painter = painterResource(id = R.drawable.ic_launcher_background), // TODO: Найти картинку с пустым значением
+                    painter = painterResource(id = R.drawable.bg_splash),
                     contentDescription = "empty",
                     modifier = Modifier.requiredSize(200.dp)
                 )
                 Spacer(modifier = Modifier.height(16.dp))
-                Text(text = "Ничего не найдено(", color = MaterialTheme.colors.onBackground)
+                Text(text = "Нет ответа от сервера", color = MaterialTheme.colors.onBackground)
             }
         }
         is DishesUiState.Error -> TODO()

@@ -17,7 +17,7 @@ class RootViewModel @Inject constructor(
     val feature = RootFeature
 
     init {
-        feature.listen(viewModelScope, EffDispatcher(DishesEffHandler()))
+        feature.listen(viewModelScope, dispatcher)
     }
 
     fun accept(msg: Msg) {

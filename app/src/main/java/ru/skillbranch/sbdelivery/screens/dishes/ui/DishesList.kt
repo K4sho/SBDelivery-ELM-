@@ -31,9 +31,10 @@ fun DishItem(
 ) {
     Card(Modifier.requiredHeight(250.dp)) {
         ConstraintLayout(
-            modifier = Modifier.clickable {
-                onClick(dish)
-            }
+            Modifier
+                .clickable {
+                    onClick(dish)
+                }
         ) {
             val (fab, title, poster, price) = createRefs()
 
@@ -44,7 +45,7 @@ fun DishItem(
                 error = {
                     Icon(
                         painter = painterResource(
-                            id = R.color.black
+                            id = R.drawable.bg_splash
                         ),
                         contentDescription = "Error loading image",
                         tint = MaterialTheme.colors.secondary,
@@ -66,26 +67,10 @@ fun DishItem(
                 }
             ) {
                 Icon(
-                    painter = painterResource(R.drawable.add_to_card),
+                    painter = painterResource(R.drawable.ic_baseline_add_24),
                     contentDescription = "Add to Card"
                 )
             }
         }
-    }
-}
-
-@Composable
-@Preview
-fun PreviewDishItem() {
-    AppTheme {
-        DishItem(
-            dish = DishItem(
-                id = "test",
-                R.drawable.dish_item.toString(),
-                "1280",
-                "Сет Королевский"
-            ),
-            onClick = {},
-            addToCart = {})
     }
 }

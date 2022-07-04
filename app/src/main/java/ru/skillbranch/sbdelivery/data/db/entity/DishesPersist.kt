@@ -10,7 +10,7 @@ data class DishesPersist(
     val name: String,
     val description: String,
     val image: String,
-    val oldPrice: Int?,
+    val oldPrice: Int,
     val price: Int,
     val rating: Float,
     val likes: Int,

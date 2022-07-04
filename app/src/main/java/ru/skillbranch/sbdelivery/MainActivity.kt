@@ -4,9 +4,11 @@ import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import dagger.hilt.android.AndroidEntryPoint
 import ru.skillbranch.sbdelivery.screens.root.logic.RootScreen
 import ru.skillbranch.sbdelivery.screens.root.ui.AppTheme
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private val vm: RootViewModel by viewModels()
 
